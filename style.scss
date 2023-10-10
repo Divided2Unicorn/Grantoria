@@ -1,0 +1,5 @@
+@use "../shared/styles/mixins/font-rubik.scss" as *;
+body {
+    @include font-rubik;
+    margin: 0;
+}
