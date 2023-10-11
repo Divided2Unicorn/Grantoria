@@ -1,4 +1,7 @@
-const socket = io("wss://localhost/", { path: "/Grantoria/", transports: ["websocket"] });
-socket.on("connection", (socket) => {
+var WS = io("wss://localhost/", {
+    path: "/Grantoria/",
+    transports: ["websocket"]
+});
+WS.on("connection", (socket) => {
     console.log(socket);
-})
+});
